@@ -18,7 +18,6 @@ public class Player : NetworkBehaviour
         groundMask = LayerMask.GetMask("Ground");
     }
 
-
     [SerializeField]
     private Rigidbody rigidBody;
 
