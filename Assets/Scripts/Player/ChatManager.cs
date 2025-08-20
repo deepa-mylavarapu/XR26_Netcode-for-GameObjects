@@ -9,7 +9,7 @@ public class ChatManager : NetworkBehaviour
 
     public void SendMessage()
     {
-        if (IsOwner && !string.IsNullOrEmpty(inputField.text))
+        if (!string.IsNullOrEmpty(inputField.text))
         {
             SendMessageServerRpc(inputField.text);
             inputField.text = "";
@@ -19,12 +19,21 @@ public class ChatManager : NetworkBehaviour
     [ServerRpc(RequireOwnership = false)]
     void SendMessageServerRpc(string message, ServerRpcParams rpcParams = default)
     {
-        BroadcastMessageClientRpc($"Player {rpcParams.Receive.SenderClientId}: {message}");
+        Debug.Log("Received message from client: " + message);
+
+        string formatted = $"Player {rpcParams.Receive.SenderClientId}: {message}";
+        BroadcastMessageClientRpc(formatted);
     }
 
     [ClientRpc]
     void BroadcastMessageClientRpc(string message)
     {
-        chatDisplay.text += message + "\n";
+        if (chatDisplay != null)
+        {
+            Debug.Log("Broadcasting message: " + message);
+            chatDisplay.text += message + "\n";
+        }
     }
+
 }
+

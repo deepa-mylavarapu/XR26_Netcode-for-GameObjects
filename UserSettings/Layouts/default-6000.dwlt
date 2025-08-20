@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 108
+  controlID: 51
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -327,7 +327,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Player
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -337,16 +337,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Player
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\deepa\Deepa1\XR26_Netcode-for-GameObjects
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 44}
-    m_SelectedIDs: 54ad0000
-    m_LastClickedID: 44372
-    m_ExpandedIDs: 00000000b8ac0000baac0000bcac000050ad000088ad000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 73}
+    m_SelectedIDs: 64ad0000
+    m_LastClickedID: 44388
+    m_ExpandedIDs: 00000000c0ac0000c2ac0000c4ac0000c6ac000024ad000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -375,7 +375,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8ac0000baac0000bcac0000
+    m_ExpandedIDs: 00000000c0ac0000c2ac0000c4ac0000c6ac0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -523,9 +523,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 56ad0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: a49affffe49dffff00b5ffffecc1ffff94c2fffff2c6fffffec7fffffacfffff10d3ffff5ad5ffff84d8fffff4d8ffffa6dafffff2e3ffff06e4ffff5ee6ffffc6e8ffff02fbffff08fbffff1cfbfffff4ffffff
+      m_ExpandedIDs: 40d7feff90d8feff60ddfeff1adffeffece3feff42e6feff1eebfeff12eefeff1ceffefff6f3feff14f9feff20fbfeff4400ffff2803ffff2808ffff7609ffff840effff1411ffffc41bffffd224ffffcc35ffff0037ffff283cffff763effff8e43ffff4c4affff5e4fffff9c50ffffae55ffffa258ffffc65dffffdc60fffff065ffff7668ffff8071ffffc472ffffee77ffff247effff427fffffde80ffffe885ffff3a87ffff5c88ffff6e8bffff9e90ffff7ea4ffffeea6ffff16acffffeab4ffffeeb9ffffe0bfffff00c1ffffd4c1ffffa6d2ffff4adeffff74dfffff8ee1ffffd0e4ffff50e6ffff68ebffff88ecffffa8f4ffff1cfbfffff2b100001cb2000050b20000eab3000060b400008ab40000beb40000babb0000e4bb000092be0000bcbe0000eac0000014c100004ac10000f6c3000032c4000038c4000064c4000050c7000092c70000bec700000ac800004cc8000078c80000acca0000f0ca00009ece0000e2ce00000ecf000018cf000044d1000086d10000e6d3000028d4000054d400005ed4000028d9000048d9000064d900006ad9000096d90000a0d90000ccdb000010dc000046dc0000b2de0000cce300000ee4000006e8000048e8000074e80000a6ea0000e8ea000088ed000082f00000a2f00000c4f0000022f3000064f3000014f5000056f50000b4f70000f6f700002cf800005cfa000098fa0000a6fa0000d2fa0000dcfa00000cfd000048fd00004efd00007afd000084fd0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -590,12 +590,12 @@ MonoBehaviour:
       displayed: 1
       id: Tool Settings
       index: 1
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":-156.0,"y":-26.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":3,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: -156, y: -26}
+      snapOffset: {x: 24, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       layout: 1
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -643,14 +643,14 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 0
       containerId: overlay-container--left
-      displayed: 0
+      displayed: 1
       id: unity-transform-toolbar
       index: 0
-      contents: '{"m_Layout":2,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":25.0},"m_SnapOffsetDelta":{"x":24.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":2,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":25.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 0, y: 25}
-      snapOffsetDelta: {x: 24, y: 0}
+      snapOffset: {x: 24, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       layout: 2
       size: {x: 0, y: 0}
@@ -1052,12 +1052,12 @@ MonoBehaviour:
       displayed: 1
       id: Overlays/OverlayMenu
       index: 1
-      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":1,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":-30.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":2,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 24, y: 0}
+      snapOffset: {x: 24, y: -30}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 2
       layout: 1
       size: {x: 0, y: 0}
       sizeOverridden: 0
